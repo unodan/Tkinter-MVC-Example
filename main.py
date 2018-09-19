@@ -68,7 +68,7 @@ class TellerView(Toplevel):  # View 2
         self.btn_withdrawal.pack(side='left')
 
 
-class App(Tk):  # The Controller
+class Bank(Tk):  # The Controller
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.withdraw()
@@ -98,4 +98,4 @@ class App(Tk):  # The Controller
 
 
 if __name__ == '__main__':
-    App().mainloop()
+    Bank().mainloop()
